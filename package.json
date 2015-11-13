@@ -1,5 +1,5 @@
 {
-  "name": "thinkster_django_angular_boilerplate",
+  "name": "django_angularjs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brwr/thinkster-django-angular-boilerplate.git"
+    "url": "https://github.com/almeidajeff/django_angularjs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brwr/thinkster-django-angular-boilerplate/issues"
+    "url": "https://github.com/almeidajeff/django_angularjs/issues"
   },
-  "homepage": "https://github.com/brwr/thinkster-django-angular-boilerplate",
+  "homepage": "https://github.com/almeidajeff/django_angularjs",
   "dependencies": {
     "bower": "^1.3.12",
     "gulp": "^3.8.9",

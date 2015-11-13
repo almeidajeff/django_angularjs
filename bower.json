@@ -1,7 +1,7 @@
 {
-  "name": "thinkster_django_angular_boilerplate",
-  "version": "0.0.0",
-  "homepage": "https://github.com/brwr/thinkster-django-angular-boilerplate",
+  "name": "django_angularjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/almeidajeff/django_angularjs",
   "license": "MIT",
   "ignore": [
     "**/.*",
