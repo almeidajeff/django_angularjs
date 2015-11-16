@@ -41,6 +41,7 @@ class AccountSerializer(serializers.ModelSerializer):
             password = validated_data.get('password', None)
             confirm_password = validated_data.get('confirm_password', None)
 
+            # Checando se o que foi digitado no campo senha é igual ao que foi digitado no campo confirmar senha.
             if password and confirm_password and password == confirm_password:
                 instance.set_password(password)
                 instance.save()
