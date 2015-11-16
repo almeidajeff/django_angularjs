@@ -7,9 +7,12 @@
 
   angular
     .module('django_angularjs.authentication.services')
+
+    /* Essa linha registra um factory com o nome Authentication no módulo da linha anterior. */
     .factory('Authentication', Authentication);
 
-  Authentication.$inject = ['$cookies', '$http'];
+    /* Injetando os cookies e http no factory criado */
+  	Authentication.$inject = ['$cookies', '$http'];
 
   /**
   * @namespace Authentication
@@ -20,6 +23,8 @@
     * @name Authentication
     * @desc The Factory to be returned
     */
+
+    /*  Definir o serviço como um objeto chamado e, em seguida, devolvê-lo, deixando os detalhes menores no arquivo. */
     var Authentication = {
       register: register
     };
@@ -37,6 +42,9 @@
     * @returns {Promise}
     * @memberOf django_angularjs.authentication.services.Authentication
     */
+
+    /* Neste ponto, o serviço de autenticação tem apenas um método: registrar, o que leva um nome de usuário, senha e e-mail. 
+    * TODO: Adicionar novos métodos aqui */
     function register(email, password, username) {
       return $http.post('/api/v1/accounts/', {
         username: username,
