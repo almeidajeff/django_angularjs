@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Registro</h1>
+
+    <div class="well">
+      <!-- A linha abaixo é responsável por chamar $scope.register que esta configurado para o controller ng-submit
+  		que chama o vm.register quando o formulário for enviado. -->
+      <form role="form" ng-submit="vm.register()">
+        <div class="form-group">
+          <label for="register__email">Email</label>
+
+          <!-- Em cada input contém a atributo ng-model, que é responsável por armazenar o valor da entrada e ViewModel,
+          	   é assim que o username,password e e-mail são pegos (get) quando o vm.register é executado. -->
+          <input type="email" class="form-control" id="register__email" ng-model="vm.email" placeholder="ex. jralmeida88@gmail.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__username">Usuário</label>
+          <input type="text" class="form-control" id="register__username" ng-model="vm.username" placeholder="ex. jralmeida" />
+        </div>
+
+        <div class="form-group">
+          <label for="register__password">Senha</label>
+          <input type="password" class="form-control" id="register__password" ng-model="vm.password" placeholder="ex. supersecreta" />
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
